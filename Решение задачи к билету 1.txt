@@ -1,0 +1,5 @@
+public boolean isPalindrome(String s){
+String cleaned = s.replaceAll("[^a-zA-Z0-9а-яА-Я]", "").toLowerCase();
+String reversed = new StringBuilder(cleaned).reverse().toString;
+return cleaned.equals(reversed);
+}
